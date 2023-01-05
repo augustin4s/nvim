@@ -1,0 +1,13 @@
+require("augustloe.plugins-setup")
+require("augustloe.core.options")
+require("augustloe.core.keymaps")
+require("augustloe.core.colorscheme")
+require("augustloe.plugins.comment")
+require("augustloe.plugins.nvim-tree")
+require("augustloe.plugins.lualine")
+require("augustloe.plugins.telescope")
+require("augustloe.plugins.nvim-cmp")
+require("augustloe.plugins.lsp.mason")
+require("augustloe.plugins.lsp.lspsaga")
+require("augustloe.plugins.lsp.lspconfig")
+
