@@ -3,14 +3,10 @@ vim.g.mapleader = " "
 local keymap = vim.keymap
 
 -- General keymaps
---keymap.set("i", "jk", "<ESC>") -- Additional escape with jk  
+--keymap.set("i", "jk", "<ESC>") -- Additional escape with jk
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
 keymap.set("n", "x", '"_x') -- normal mode - x deleting a character doesnt yank/save to clipboard
 keymap.set("n", "d", '"_d') -- normal mode - dd deleting a line doesnt yank/save to clipboard
-
-
---keymap.set("n", "<leader>+", "<C-a>") -- increment
---keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -41,10 +37,20 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- telescope git commands (not on youtube nvim video)
---keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
---keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
---keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
---keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
+keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
+keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
+keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
+keymap.set("n", "<leader><CR>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- restart lsp server (not on youtube nvim video)
 --keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
+--	name = "clangd"
+
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- LSP start/stop
+keymap.set("n", "<leader>ll", ":LspToggle<CR>")
+
+-- greatest remap ever
+--keymap.set("x", "<leader>p", [["_dP]])
