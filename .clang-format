@@ -1,0 +1,4 @@
+BasedOnStyle: Microsoft
+UseTab: Always
+IndentWidth: 8
+TabWidth: 8
