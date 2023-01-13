@@ -28,8 +28,6 @@ Personal neovim configuration - work in progress
 - `<leader>fh` = list available help tags
 
 ## LSP
-
-## Formatting
 - `K` = display hover information about symbol under cursos in a floating window. See vim.lsp.buf.hover().
 - `gd` = Jumps to the definition of the symbol under the cursor. See vim.lsp.buf.definition().
 - `gD` = Jumps to the declaration of the symbol under the cursor. Some servers don't implement this feature. See vim.lsp.buf.declaration().
@@ -44,7 +42,6 @@ Personal neovim configuration - work in progress
 - `<Ctrl-k>` = Displays signature information about the symbol under the cursor in a floating window. See vim.lsp.buf.signature_help(). If a mapping already exists for this key this function is not bound.
 
 # Commands
-
 - `:LspZeroFormat`:
     Formats the current buffer or range. If the "bang" is provided
     formatting will be synchronous (ex: LspZeroFormat!). See
