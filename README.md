@@ -6,6 +6,8 @@ Personal neovim configuration - work in progress
 ## General
 - `<leader>` = space key
 - `<leader>nh` = clear search
+- `J` - ":m '>+1<CR>gv=gv" = in Visual mode move selection up
+- `K` - ":m '<-2<CR>gv=gv" = in Visual mode move selection up
 
 ## Window management
 - `<leader>sv` = split window vertically
@@ -27,7 +29,14 @@ Personal neovim configuration - work in progress
 - `<leader>fb` = list open buffers in current neovim instance
 - `<leader>fh` = list available help tags
 
+### Git
+- `<leader>gc` - "<cmd>Telescope git_commits<cr>") = list all git commits (use <cr> to checkout) ["gc" for git commits]
+- `<leader>gfc` - "<cmd>Telescope git_bcommits<cr>") = list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
+- `<leader>gb` - "<cmd>Telescope git_branches<cr>") = list git branches (use <cr> to checkout) ["gb" for git branch]
+- `<leader><CR>gs` - "<cmd>Telescope git_status<cr>") = list current changes per file with diff preview ["gs" for git status]
+
 ## LSP
+- `<leader>ll` - ":LspToggle<CR>" = Toggle LSP start/stop
 - `K` = display hover information about symbol under cursos in a floating window. See vim.lsp.buf.hover().
 - `gd` = Jumps to the definition of the symbol under the cursor. See vim.lsp.buf.definition().
 - `gD` = Jumps to the declaration of the symbol under the cursor. Some servers don't implement this feature. See vim.lsp.buf.declaration().
