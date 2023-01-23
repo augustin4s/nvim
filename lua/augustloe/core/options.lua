@@ -7,7 +7,7 @@ opt.number = true
 opt.tabstop = 8 -- lenght of an actual \t character
 opt.shiftwidth = 0 -- use tabstop value
 opt.expandtab = false -- use actual tab instead of spaces
-opt.autoindent = true
+--opt.autoindent = true
 opt.softtabstop = -1 -- use tabstop value
 --opt.cindent
 --opt.smartindent = true
@@ -33,7 +33,7 @@ opt.signcolumn = "yes"
 opt.backspace = "indent,eol,start"
 
 -- clipboard (use system clipboard when yanking)
-opt.clipboard:append("unnamedplus")
+--opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true

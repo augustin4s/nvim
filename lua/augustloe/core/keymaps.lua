@@ -8,6 +8,17 @@ keymap.set("n", "<leader>nh", ":nohl<CR>") -- clear search
 keymap.set("n", "x", '"_x') -- normal mode - x deleting a character doesnt yank/save to clipboard
 keymap.set("n", "d", '"_d') -- normal mode - dd deleting a line doesnt yank/save to clipboard
 
+vim.keymap.set("n", "Q", "<nop>")
+
+-- Yankies
+--vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+--vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+-- Map backward slash + y/p to yank/paste to a /tmp/vimtmp file
+keymap.set("v", "<Bslash>y", ":w! /tmp/vimtmp<CR>")
+keymap.set("v", "<Bslash>p", ":r! cat /tmp/vimtmp<CR>")
+
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally

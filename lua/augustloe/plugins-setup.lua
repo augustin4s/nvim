@@ -33,10 +33,17 @@ return packer.startup(function(use)
         -- lua functions that many plugins use
         use("nvim-lua/plenary.nvim")
 
+        -- Colorschemes
         use({
                 'rose-pine/neovim',
                 as = 'rose-pine'
         })
+
+        use({ "sainnhe/edge", as = "edge" })
+        use({ "sainnhe/everforest", as = "everforest" })
+        use({ "catppuccin/nvim", as = "catppuccin" })
+        use({ "Everblush/everblush.nvim", as = "everblush" })
+        use({ "rebelot/kanagawa.nvim", as = "kanagawa" })
 
         -- tmux & split window navigation (see keymaps for key mapping)
         use("christoomey/vim-tmux-navigator")

@@ -5,6 +5,7 @@ if not setup_lsp then
 	return
 end
 
+--lsp.preset("lsp-compe")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
@@ -83,7 +84,27 @@ lsp.on_attach(function(_, bufnr)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 end)
 
+lsp.setup_nvim_cmp({
+	completion = { autocomplete = false }
+})
+
 lsp.setup()
+
+--[[
+local cmp = require("cmp")
+lsp.setup()
+lsp.setup_nvim_cmp({ preselect = cmp.PreselectMode.None })
+--]]
+
+--[[
+cmp.setup({
+    enabled = true,
+    preselect = cmp.PreselectMode.None,
+    sources = {
+        {name = 'nvim_lsp'}
+    }
+})
+--]]
 
 --[[
 local setup_nls, null_ls = pcall(require, "null-ls")
