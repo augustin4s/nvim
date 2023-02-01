@@ -49,6 +49,9 @@ Personal neovim configuration - work in progress
 - `<F2>` = Renames all references to the symbol under the cursor. See vim.lsp.buf.rename().
 - `<F4>` = Selects a code action available at the current cursor position. See vim.lsp.buf.code_action().
 - `<Ctrl-k>` = Displays signature information about the symbol under the cursor in a floating window. See vim.lsp.buf.signature_help(). If a mapping already exists for this key this function is not bound.
+vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, opts)
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 
 # Commands
 - `:LspZeroFormat`:
