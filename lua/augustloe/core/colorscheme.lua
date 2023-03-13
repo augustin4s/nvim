@@ -5,6 +5,8 @@
 -- end
 --
 local default_color = "kanagawa"
+ 
+
 
 local colorschemes = {
 	"catppuccin",

@@ -27,7 +27,7 @@ opt.incsearch = true
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-opt.signcolumn = "yes"
+opt.signcolumn = "auto:4"
 
 -- backspace
 opt.backspace = "indent,eol,start"

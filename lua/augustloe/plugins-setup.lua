@@ -27,6 +27,8 @@ end
 
 return packer.startup(function(use)
 
+        use("echasnovski/mini.trailspace")
+
         -- Package manager
         use("wbthomason/packer.nvim")
 
