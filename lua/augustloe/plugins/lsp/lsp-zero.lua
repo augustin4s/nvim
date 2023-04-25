@@ -12,7 +12,7 @@ lsp.ensure_installed({
 	-- Replace these with whatever servers you want to install
 	"clangd",
 	"rome",
-	"sumneko_lua",
+	"lua_ls",
 })
 
 lsp.set_preferences({
@@ -37,7 +37,7 @@ lsp.set_server_config({
 })
 
 -- Fix Undefined global "vim", "ngx"
-lsp.configure("sumneko_lua", {
+lsp.configure("lua_ls", {
 	settings = {
 		Lua = {
 			diagnostics = {

@@ -19,7 +19,7 @@ opt.wrap = false
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
-opt.incsearch = true
+--opt.incsearch = true
 
 -- cursor line
 --opt.cursorline = true
@@ -34,6 +34,9 @@ opt.backspace = "indent,eol,start"
 
 -- clipboard (use system clipboard when yanking)
 --opt.clipboard:append("unnamedplus")
+opt.completeopt = 'menuone,noselect'
+opt.mouse = 'a'
+opt.breakindent = true
 
 -- split windows
 opt.splitright = true
