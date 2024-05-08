@@ -62,6 +62,10 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- LSP start/stop
 keymap.set("n", "<leader>ll", ":LspToggle<CR>")
+--keymap.set('v', '<leader>1f', vim.lsp.buf.format)--, bufopts)
+
+--NOTES:
+-- = operator indents visually selected lines
 
 -- greatest remap ever
 --keymap.set("x", "<leader>p", [["_dP]])

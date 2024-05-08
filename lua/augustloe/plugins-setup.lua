@@ -27,10 +27,9 @@ end
 
 return packer.startup(function(use)
 
-        use("echasnovski/mini.trailspace")
-
         -- Package manager
         use("wbthomason/packer.nvim")
+        use("lukas-reineke/lsp-format.nvim")
 
         -- lua functions that many plugins use
         use("nvim-lua/plenary.nvim")
@@ -40,6 +39,8 @@ return packer.startup(function(use)
                 'rose-pine/neovim',
                 as = 'rose-pine'
         })
+
+        use('ntpeters/vim-better-whitespace')
 
         use({ "sainnhe/edge", as = "edge" })
         use({ "sainnhe/everforest", as = "everforest" })

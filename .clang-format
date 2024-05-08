@@ -1,4 +1,4 @@
-BasedOnStyle: Microsoft
-UseTab: Always
-IndentWidth: 8
-TabWidth: 8
+BasedOnStyle: GNU
+#UseTab: Always
+#IndentWidth: 8
+#TabWidth: 8
